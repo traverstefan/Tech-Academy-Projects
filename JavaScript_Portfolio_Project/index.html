@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <!--HEAD-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width"/>
+        <title>Traver Stefan</title>
+        <link rel="stylesheet" type="text/css" href="./CSS/css.css">
+    </head>
+
+    <!--BODY-->
+    <body class="Background">
+
+        <!--NAVBAR-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub/LinkedIn</a>
+            <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
+        </div>
+
+        <!--BACKGROUND VIDEO-->
+        <div class="Home">
+            <video autoplay muted loop id="Blue_Code">
+                <source src="./Video/blue_code.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--VIDEO TEXT-->
+        <div class="Video_Text">
+            <h1 class="white-text">Traver Stefan's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>The internet is not for sissies</q> -Paul Vixie
+                    <br>
+                    <br>Welcome to my portfolio website, where you can learn a little about my background and experience.
+                    <br>Thank you and enjoy!
+                </p>
+            </strong>
+        </div>
+
+        <!--SLIDESHOW SECTION-->
+        <div id="Slideshow">
+            <div class="Slideshow_Background">
+                <div class="Slideshow_Container">
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./Images/kali.png" alt="Kali Linux">
+                        <div class="text">I'm Familiar With Kali Linux In Offensive & Defensive Applications</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./Images/burp.png" alt="Burp Suite">
+                        <div class="text">I've Used Burp Suite for Penetration Testing</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./Images/wireshark.png" alt="WireShark">
+                        <div class="text">I've Examined Malware-Infected PCAPs With Wire Shark</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./Images/codes.png" alt="HTML, CSS, JS Logo">
+                        <div class="text">I'm Experienced With HTML, CSS, & Javascript</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./Images/vs_code.png" alt="VS Code Logo">
+                        <div class="text">I Regularly Use VS Code In My Projects</div>
+                    </div>
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <div class="all_dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+
+                </div>
+            </div>
+        </div>
+
+        <!--ABOUT SECTION-->
+        <div class="Row" id="About">
+            <div class="Column_2">
+                <img src="./Images/cyber_security.png" alt="Cyber Security">
+            </div>
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a student of the <a href="https://www.learncodinganywhere.com/" rel="noreferrer noopener" target="_blank">The Tech Academy</a> Cybersecurity Bootcamp,
+                    with the hopes of breaking into the tech industry.
+                    <br>
+                    <br>I am a former Naval Officer, followed by 14 years in law enforcement.  Four of those
+                    years included work as a White-Collar Crimes investigator.
+                    <br>
+                    <br>In my off-time, I enjoy the outdoors, finding great restaurants,
+                    and learning something new!
+                </p>
+            </div>
+        </div>
+
+        <!--GITHUB SECTION-->
+        <div class="Row" id="GitHub">
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p class="center">
+                    You can view my coding projects here:
+                    <p class="center"><a href="https://github.com/traverstefan/HTML-and-CSS-Projects/tree/main/Basic_HTML_and_CSS" rel="noreferrer noopener"
+                    target="_blank">Traver Stefan's Github</a></p>
+                </p><br>
+                <h1>LinkedIn</h1>
+                <p class="center">
+                    You can view my LinkedIn Profile here:
+                <p class="center"><a href="https://www.linkedin.com/in/traverstefan" rel="noreferrer noopener"
+                    target="_blank">Traver Stefan's LinkedIn</a></p>
+                </p>
+                
+            </div>
+            <div class="Column_2">
+                <a href="https://github.com/traverstefan/HTML-and-CSS-Projects/tree/main/Basic_HTML_and_CSS" rel="noreferrer noopener" target="_blank"><img src="./Images/Fintechtocat.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--CONTACT SECTION-->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/f/xeqylrjw" method="POST" class="form-container">
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Please enter your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                        <input type="text" placeholder="Please enter your phone number here" name="phone" required>
+                    <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Please enter your email address here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                        <input type="text" placeholder="Please enter your message here" name="message" required>
+
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
+        </div>
+
+        <!--FOOTER SECTION-->
+        <footer>
+            <p class="center">Created by Traver Stefan | June 2024 | <a href="https://github.com/traverstefan/HTML-and-CSS-Projects" rel="noreferrer noopener" target="_blank">Other Projects</a>
+        </footer>
+        <script src="JS/js.js"></script>
+    </body>
+</html>

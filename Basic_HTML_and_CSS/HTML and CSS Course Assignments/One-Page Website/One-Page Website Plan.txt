@@ -1,0 +1,14 @@
+About eagles
+
+heading and article or <p> tags
+
+nav for moving to other sections
+
+video
+
+photos
+
+contact form
+
+footer
+
