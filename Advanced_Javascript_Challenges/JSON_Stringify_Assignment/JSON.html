@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JSON Stringify!</h1>
+        <p id="cars"></p>
+
+        <script>
+            const car = {
+                "make":"Honda", "model": "Accord",
+                "year":"2024"
+            };
+            const myJSON = JSON.stringify(car);
+            document.getElementById("cars").innerHTML=myJSON;
+        </script>
+    </body>
+</html>

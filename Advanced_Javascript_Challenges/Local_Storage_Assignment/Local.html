@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Local Storage!</h1>
+    <p>The saved item is:</p>
+    <p id="cars"></p>
+
+    <script>
+        localStorage.setItem("make", "Honda");
+        document.getElementById("cars").innerHTML
+        = localStorage.getItem("make");
+    </script>
+
+</body>
+
+</html>

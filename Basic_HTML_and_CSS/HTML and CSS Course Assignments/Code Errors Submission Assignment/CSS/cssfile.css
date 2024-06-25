@@ -1,0 +1,15 @@
+body{
+    color: darkblue; background-color: lightblue;
+}
+
+p{
+    font-weight: bold;
+}
+
+img{
+    border: 2px dashed red;
+}
+
+h3 {
+    text-align: center;
+}

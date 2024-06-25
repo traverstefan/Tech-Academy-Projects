@@ -1,0 +1,5 @@
+#grad1{
+    height: 300px;
+    background-color:lightgrey;
+    background-image:linear-gradient(to bottom right, lightgrey, purple);
+}

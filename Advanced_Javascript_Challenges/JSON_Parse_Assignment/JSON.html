@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JSON Parse!</h1>
+    <p id="cars"></p>
+
+    <script>
+        const car = '{"make": "Honda", "model": "Accord", "year": "2024"}';
+        const myJSON = JSON.parse(car);
+        document.getElementById("cars").innerHTML = myJSON.year + " " + myJSON.make + " " + myJSON.model;
+    </script>
+</body>
+
+</html>
